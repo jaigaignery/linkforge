@@ -13,7 +13,7 @@ export default function AppSidebar() {
       <Link
         href={"/account"}
         className={
-          "flex gap-4 p-2 " + (path === "/account" ? "text-blue-500" : "")
+          "flex gap-4 p-2 " + (path === "/account" ? "text-orange-500" : "")
         }
       >
         <FontAwesomeIcon
@@ -26,7 +26,7 @@ export default function AppSidebar() {
       <Link
         href={"/analytics"}
         className={
-          "flex gap-4 p-2 " + (path === "/analytics" ? "text-blue-500" : "")
+          "flex gap-4 p-2 " + (path === "/analytics" ? "text-orange-500" : "")
         }
       >
         <FontAwesomeIcon

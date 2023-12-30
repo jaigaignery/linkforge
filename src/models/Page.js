@@ -13,7 +13,7 @@ const PageSchema = new Schema(
     buttons: { type: Object, default: {} },
     links: { type: Object, default: [] },
   },
-  { timestamps: true }
+  { timestamps: true, minimize: false }
 );
 
 export const Page = models?.Page || model("Page", PageSchema);

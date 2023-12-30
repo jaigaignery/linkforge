@@ -1,7 +1,7 @@
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import AppSidebar from "@/components/layout/AppSidebar";
 import { Page } from "@/models/Page";
-import { faBars, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faFireFlameCurved } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import mongoose from "mongoose";
 import { getServerSession } from "next-auth";
@@ -63,8 +63,8 @@ export default async function AppTemplate({ children, ...rest }) {
                 >
                   <FontAwesomeIcon
                     size="lg"
-                    icon={faLink}
-                    className="text-blue-500"
+                    icon={faFireFlameCurved}
+                    className="text-orange-500"
                   />
                   <span className="text-xl text-gray-300">/</span>
                   <span>{page.uri}</span>
