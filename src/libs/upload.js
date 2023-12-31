@@ -4,9 +4,11 @@ export async function upload(ev, callbackFn) {
   const file = ev.target.files?.[0];
 
   if (file) {
+    console.log(file);
     const uploadPromise = new Promise((resolve, reject) => {
       const data = new FormData();
       data.set("file", file);
+      console.log(data.get("file"));
       fetch("/api/upload", {
         method: "POST",
         body: data,
