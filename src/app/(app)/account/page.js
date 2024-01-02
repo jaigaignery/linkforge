@@ -18,9 +18,6 @@ export default async function AccountPage({ searchParams }) {
   const page = await Page.findOne({ owner: session?.user?.email });
   if (page) {
     let pageObj = JSON.parse(JSON.stringify(page));
-
-    console.log(pageObj);
-
     return (
       <>
         <PageSettingsForm page={pageObj} user={session.user} />

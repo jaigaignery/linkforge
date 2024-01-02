@@ -1,7 +1,7 @@
 "use client";
 import { savePageSettings } from "@/actions/pageActions";
 import SubmitButton from "@/components/buttons/SubmitButton";
-import RadioTogglers from "@/components/forms/RadioTogglers";
+import RadioTogglers from "@/components/formItems/RadioTogglers";
 import SectionBox from "@/components/layout/SectionBox";
 import { upload } from "@/libs/upload";
 import {
@@ -21,6 +21,7 @@ export default function PageSettingsForm({ page, user }) {
   const [bgColor, setBgColor] = useState(page.bgColor);
   const [bgImage, setBgImage] = useState(page.bgImage);
   const [avatar, setAvatar] = useState(user?.image);
+
   async function saveBaseSettings(formData) {
     const result = await savePageSettings(formData);
     if (result) {
