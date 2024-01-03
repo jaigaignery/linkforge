@@ -40,8 +40,8 @@ export default function PageSettingsForm({ page, user }) {
     });
   }
   return (
-    <div>
-      <SectionBox>
+    <div className="bg-zinc-900">
+      <SectionBox className="bg-zinc-900">
         <form action={saveBaseSettings}>
           <div
             className="py-4 -m-4 min-h-[300px] flex justify-center items-center bg-cover bg-center"
@@ -75,7 +75,7 @@ export default function PageSettingsForm({ page, user }) {
               )}
               {bgType === "image" && (
                 <div className="flex justify-center">
-                  <label className="bg-white shadow px-4 py-2 mt-2 flex gap-2">
+                  <label className="bg-zinc-700 shadow px-4 py-2 mt-2 flex gap-2">
                     <input type="hidden" name="bgImage" value={bgImage} />
                     <input
                       type="file"
@@ -96,7 +96,7 @@ export default function PageSettingsForm({ page, user }) {
           </div>
           <div className="flex justify-center -mb-12">
             <div className="relative -top-8 w-[128px] h-[128px]">
-              <div className="overflow-hidden h-full rounded-full border-4 border-white shadow shadow-black/50">
+              <div className="overflow-hidden h-full rounded-full border-4 border-zinc-700 shadow shadow-black/50">
                 <Image
                   className="w-full h-full object-cover"
                   src={avatar}
@@ -107,7 +107,7 @@ export default function PageSettingsForm({ page, user }) {
               </div>
               <label
                 htmlFor="avatarIn"
-                className="absolute bottom-0 -right-2 bg-white p-2 rounded-full shadow shadow-black/50 aspect-square flex items-center cursor-pointer"
+                className="absolute bottom-0 -right-2 bg-zinc-700 p-2 rounded-full shadow shadow-black/50 aspect-square flex items-center cursor-pointer"
               >
                 <FontAwesomeIcon size={"xl"} icon={faCloudArrowUp} />
               </label>
@@ -128,8 +128,9 @@ export default function PageSettingsForm({ page, user }) {
               type="text"
               id="nameIn"
               name="displayName"
+              className="bg-zinc-700 text-white"
               defaultValue={page.displayName}
-              placeholder="John Doe"
+              placeholder="John Smith"
             />
             <label className="input-label" htmlFor="locationIn">
               Location
@@ -138,6 +139,7 @@ export default function PageSettingsForm({ page, user }) {
               type="text"
               id="locationIn"
               name="location"
+              className="bg-zinc-700 text-white"
               defaultValue={page.location}
               placeholder="Somewhere in the world"
             />
@@ -147,6 +149,7 @@ export default function PageSettingsForm({ page, user }) {
             <textarea
               name="bio"
               defaultValue={page.bio}
+              className="bg-zinc-700 text-white"
               id="bioIn"
               placeholder="Your bio goes here..."
             />

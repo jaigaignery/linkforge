@@ -33,7 +33,7 @@ export default async function AppTemplate({ children }) {
         <main className="md:flex min-h-screen">
           <label
             htmlFor="navCb"
-            className="md:hidden ml-8 mt-4 p-4 rounded-md bg-white shadow inline-flex items-center gap-2 cursor-pointer"
+            className="md:hidden ml-8 mt-4 p-4 text-white rounded-md bg-zinc-900 inline-flex items-center gap-2 cursor-pointer"
           >
             <FontAwesomeIcon icon={faBars} />
             <span>Open navigation</span>
@@ -43,7 +43,7 @@ export default async function AppTemplate({ children }) {
             htmlFor="navCb"
             className="hidden backdrop fixed inset-0 bg-black/80 z-10"
           ></label>
-          <aside className="bg-white w-48 p-4 pt-6 shadow fixed md:static -left-48 top-0 bottom-0 z-20 transition-all">
+          <aside className="bg-zinc-900 w-48 p-4 pt-6 fixed md:static -left-48 top-0 bottom-0 z-20 transition-all">
             <div className="sticky top-0 pt-2">
               <div className="rounded-full overflow-hidden aspect-square w-24 mx-auto">
                 <Image
@@ -57,7 +57,7 @@ export default async function AppTemplate({ children }) {
                 <Link
                   target="_blank"
                   href={"/" + page.uri}
-                  className="text-center mt-4 flex gap-1 items-center justify-center"
+                  className="text-center text-white mt-4 flex gap-1 items-center justify-center"
                 >
                   <FontAwesomeIcon
                     size="lg"
