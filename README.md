@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LinkForge
 
-## Getting Started
+<https://jaigaignery-linkforge.vercel.app/>
 
-First, run the development server:
+_Sample user page: <https://jaigaignery-linkforge.vercel.app/jai>_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LinkForge offers a user-friendly platform akin to Linktree, allowing you to curate a personalized page to effortlessly showcase your links and social profiles. Create an account, customize your page, and gain valuable insights into your online presence with real-time analytics, tracking page views and link clicks. Simplify your digital identity with LinkForge, making it easy for others to explore and connect with your online content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+LinkForge makes use of various web technologies and languages to make it a seamless full-stack application. Here are the technologies used:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- HTML
+- CSS
+- TailwindCSS
+- Node.js
+- React.js
+- Next.js
+- NextAuth/OAuth
+- MongoDB
+- AWS S3
 
-## Learn More
+## Key Features
 
-To learn more about Next.js, take a look at the following resources:
+#### Seamless Sign-In
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Effortlessly access LinkForge by signing in using popular sign-in providers, ensuring a smooth and secure login experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Personalized Page Creation
 
-## Deploy on Vercel
+Build a dedicated space for your links and social media profiles, tailoring it to your preferences and online persona.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Creative Customization:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Decorate and customize your page with a palette of colors, icons, and images, allowing you to express your unique style and brand identity.
+
+#### Performance Analytics:
+
+Stay informed with real-time analytics that provide insights into your online presence, tracking both page views and link clicks.
+
+#### User-Friendly Interface:
+
+Navigate through an intuitive platform that simplifies the customization process, making it easy for you to shape your online space.
+
+#### Data-Driven Insights:
+
+Leverage analytics to understand your audience better, enabling you to optimize your content and engagement strategies based on actionable data.
+
+## Upcoming features
+
+I am always looking to add features to and polish LinkForge. Here are some improvements I plan to make in the near future:
+
+- Upgrade maximum allowed image size to be uploaded
+- Optimize fontawesome icon loading
+- Add more sign-in providers
