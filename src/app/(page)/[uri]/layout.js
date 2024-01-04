@@ -18,7 +18,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang="en">
       <body
-        className={`bg-center p-1 bg-cover ${lato.className}`}
+        className={`h-screen bg-center p-1 bg-cover ${lato.className}`}
         style={
           page.bgType === "color"
             ? { backgroundColor: page.bgColor }
