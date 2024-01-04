@@ -62,7 +62,7 @@ export default async function UserPage({ params }) {
           : { backgroundImage: `url(${page.bgImage})` }
       }
     >
-      <div className="aspect-square w-36 h-36 mx-auto mt-36 relative">
+      <div className="aspect-square w-36 h-36 mx-auto mt-20 relative">
         <Image
           className="rounded-full w-full h-full object-cover"
           src={user.image}

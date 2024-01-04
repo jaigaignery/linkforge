@@ -6,7 +6,10 @@ import Image from "next/image";
 export default async function Home() {
   const session = await getServerSession(authOptions);
   return (
-    <main className="flex flex-col sm:flex-row items-center justify-between gap-8 pt-32">
+    <main
+      className="flex flex-col sm:flex-row items-center justify-between gap-8 pt-20
+    "
+    >
       <div className="max-w-2xl">
         <h1 className="text-[32px] md:text-[8.5vmin] lg:text-[88px] leading-none text-white font-bold">
           One link to rule them all.
