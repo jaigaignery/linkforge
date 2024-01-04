@@ -21,7 +21,12 @@ export default async function Home() {
         <HeroForm user={session?.user} />
       </div>
       <div className="max-w-2xl">
-        <Image src="/project-1.png" width="1250" height="1250" />
+        <Image
+          src="/project-1.png"
+          alt="user page demo"
+          width="1250"
+          height="1250"
+        />
       </div>
     </main>
   );
