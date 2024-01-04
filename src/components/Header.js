@@ -9,33 +9,43 @@ export default async function Header() {
   const session = await getServerSession(authOptions);
 
   return (
-    <header className="bg-black py-4">
-      <div className="max-w-4xl flex justify-between mx-auto px-6">
-        <div className="flex items-center gap-6">
-          <Link href={"/"} className="flex items-center gap-2 text-orange-500">
-            <FontAwesomeIcon
-              icon={faFireFlameCurved}
-              className="text-orange-500"
-            />
-            <span className="font-bold">LinkForge</span>
+    <header className="bg-transparent py-4">
+      <div className="flex justify-between gap-6 mx-auto">
+        <div className="flex text-3xl items-center gap-6">
+          <Link
+            href={"/"}
+            className="flex items-center gap-2 text-secondary-color"
+          >
+            <FontAwesomeIcon icon={faFireFlameCurved} />
+            <span className="text-lg font-bold">LinkForge</span>
           </Link>
-          <nav className="flex items-center gap-4 text-zinc-300 text-sm">
-            <Link href={"/about"}>About</Link>
-            <Link href={"/pricing"}>Pricing</Link>
-            <Link href={"/contact"}>Contact</Link>
-          </nav>
         </div>
-        <nav className="flex items-center gap-4 text-sm text-zinc-300">
-          {!!session && (
+        <nav className="flex items-center gap-4 text-md text-zinc-300">
+          {session && (
             <>
-              <Link href={"/account"}>Hello, {session.user.name}</Link>
+              <Link
+                href={"/account"}
+                className="flex text-white border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
+              >
+                My Account
+              </Link>
               <LogoutButton />
             </>
           )}
           {!session && (
             <>
-              <Link href={"/login"}>Sign In</Link>
-              <Link href={"/login"}>Create Account</Link>
+              <Link
+                href={"/login"}
+                className="flex text-white border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
+              >
+                Sign In
+              </Link>
+              <Link
+                href={"/login"}
+                className="flex bg-secondary-color border-2 border-secondary-color text-black items-center gap-2 rounded-lg p-2 px-4 shadow"
+              >
+                Create Account
+              </Link>
             </>
           )}
         </nav>

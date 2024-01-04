@@ -1,8 +1,5 @@
 import Header from "@/components/Header";
-import { Lato } from "next/font/google";
 import "../globals.css";
-
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
   title: "LinkForge",
@@ -12,10 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={`max-w-screen-2xl mx-auto bg-primary-color p-6`}>
         <main>
           <Header />
-          <div className="max-w-4xl mx-auto p-6">{children}</div>
+          <div>{children}</div>
         </main>
       </body>
     </html>

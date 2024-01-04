@@ -73,10 +73,10 @@ export default function PageLinksForm({ page, user }) {
         <button
           onClick={addNewLink}
           type="button"
-          className="text-orange-500 text-lg flex gap-2 items-center cursor-pointer"
+          className="text-primary-color text-lg flex gap-2 items-center cursor-pointer"
         >
           <FontAwesomeIcon
-            className="bg-orange-500 text-white p-1 rounded-full aspect-square"
+            className="bg-primary-color text-white p-1 rounded-lg aspect-square"
             icon={faPlus}
           />
           <span>Add new</span>
@@ -92,7 +92,7 @@ export default function PageLinksForm({ page, user }) {
                   />
                 </div>
                 <div className="text-center">
-                  <div className="bg-gray-300 inline-block relative aspect-square overflow-hidden w-16 h-16 inline-flex justify-center items-center">
+                  <div className="bg-gray-300 inline-block rounded-lg relative aspect-square overflow-hidden w-16 h-16 inline-flex justify-center items-center">
                     {l.icon && (
                       <Image
                         className="w-full h-full object-cover"
@@ -115,7 +115,7 @@ export default function PageLinksForm({ page, user }) {
                     />
                     <label
                       htmlFor={"icon" + l.key}
-                      className="border mt-2 p-2 flex items-center gap-1 text-gray-600 cursor-pointer mb-2 justify-center"
+                      className="border mt-2 p-2 flex items-center rounded-lg gap-1 text-gray-600 cursor-pointer mb-2 justify-center"
                     >
                       <FontAwesomeIcon icon={faCloudArrowUp} />
                       <span>Change icon</span>
@@ -123,7 +123,7 @@ export default function PageLinksForm({ page, user }) {
                     <button
                       onClick={() => removeLink(l.key)}
                       type="button"
-                      className="w-full bg-gray-300 py-2 px-3 mb-2 h-full flex gap-2 items-center justify-center"
+                      className="w-full bg-gray-300 py-2 px-3 mb-2 h-full rounded-lg flex gap-2 items-center justify-center"
                     >
                       <FontAwesomeIcon icon={faTrash} />
                       <span>Remove this link</span>
@@ -157,8 +157,8 @@ export default function PageLinksForm({ page, user }) {
             ))}
           </ReactSortable>
         </div>
-        <div className="border-t pt-4 mt-4">
-          <SubmitButton className="max-w-xs mx-auto">
+        <div className="border-t pt-6 pb-2 mt-4">
+          <SubmitButton className="max-w-xs rounded-lg mx-auto">
             <FontAwesomeIcon icon={faSave} />
             <span>Save</span>
           </SubmitButton>

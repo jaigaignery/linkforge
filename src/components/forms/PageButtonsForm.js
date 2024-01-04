@@ -38,7 +38,7 @@ export const allButtons = [
     key: "mobile",
     label: "mobile",
     icon: faMobile,
-    placeholder: "+46 123 123 123",
+    placeholder: "+1 613 123 1234",
   },
   {
     key: "instagram",
@@ -121,7 +121,7 @@ export default function PageButtonsForm({ user, page }) {
                 <button
                   onClick={() => removeButton(b)}
                   type="button"
-                  className="py-2 px-4  bg-gray-300 cursor-pointer"
+                  className="py-2 px-4 ml-2 bg-gray-300 rounded-lg cursor-pointer"
                 >
                   <FontAwesomeIcon icon={faTrash} />
                 </button>
@@ -129,13 +129,13 @@ export default function PageButtonsForm({ user, page }) {
             </div>
           ))}
         </ReactSortable>
-        <div className="flex flex-wrap gap-2 mt-4 border-y py-4">
+        <div className="flex flex-wrap gap-2 mt-4 border-t pt-6 pb-4">
           {availableButtons.map((b) => (
             <button
               key={b.key}
               type="button"
               onClick={() => addButtonToProfile(b)}
-              className="flex items-center gap-1 p-2 bg-gray-200"
+              className="flex items-center gap-1 rounded-lg p-2 bg-gray-200"
             >
               <FontAwesomeIcon icon={b.icon} />
               <span className="">{upperFirst(b.label)}</span>
@@ -143,8 +143,8 @@ export default function PageButtonsForm({ user, page }) {
             </button>
           ))}
         </div>
-        <div className="max-w-xs mx-auto mt-8">
-          <SubmitButton>
+        <div className="border-t pt-6 pb-2 mt-4">
+          <SubmitButton className="max-w-xs rounded-lg mx-auto">
             <FontAwesomeIcon icon={faSave} />
             <span>Save</span>
           </SubmitButton>

@@ -16,7 +16,7 @@ export default function UsernameForm({ desiredUsername }) {
     }
   }
   return (
-    <form action={handleSubmit}>
+    <form action={handleSubmit} className="mt-32">
       <h1 className="text-4xl font-bold text-center mb-2">
         Grab your username
       </h1>

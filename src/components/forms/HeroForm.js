@@ -33,25 +33,26 @@ export default function HeroForm({ user }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="inline-flex items-center rounded-full shadow-lg bg-black shadow-gray-400/20"
+      className="flex items-center lg:flex-row flex-col gap-2"
     >
-      <span className=" rounded-full bg-black text-white py-4 pl-4">
-        linkforge.to/&nbsp;
-      </span>
-      <input
-        type="text"
-        className=""
-        style={{
-          color: "white",
-          backgroundColor: "black",
-          marginBottom: 0,
-          paddingLeft: 0,
-        }}
-        placeholder="username"
-      />
+      <div className="flex bg-white shadow-lg shadow-gray-400/20 rounded-lg">
+        <span className="rounded-lg bg-white text-black py-4 pl-4">
+          linkforge.to/&nbsp;
+        </span>
+        <input
+          type="text"
+          style={{
+            color: "black",
+            backgroundColor: "white",
+            marginBottom: 0,
+            paddingLeft: 0,
+          }}
+          placeholder="username"
+        />
+      </div>
       <button
         type="submit"
-        className="rounded-full bg-orange-500 text-white py-4 px-6 whitespace-nowrap"
+        className="rounded-lg bg-secondary-color ml-4 text-black py-4 px-6 whitespace-nowrap"
       >
         Join for Free
       </button>
