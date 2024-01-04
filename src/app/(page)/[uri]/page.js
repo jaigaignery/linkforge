@@ -54,14 +54,7 @@ export default async function UserPage({ params }) {
   const user = await User.findOne({ email: page.owner });
   await Event.create({ uri: uri, page: uri, type: "view" });
   return (
-    <div
-      className="text-white min-h-screen bg-center p-1 bg-cover"
-      style={
-        page.bgType === "color"
-          ? { backgroundColor: page.bgColor }
-          : { backgroundImage: `url(${page.bgImage})` }
-      }
-    >
+    <div className="text-white min-h-screen bg-center p-1 bg-cover">
       <div className="aspect-square w-36 h-36 mx-auto mt-20 relative">
         <Image
           className="rounded-full w-full h-full object-cover"
