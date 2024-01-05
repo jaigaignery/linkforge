@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import LogoutButton from "./buttons/LogoutButton";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export default async function Header() {
   const session = await getServerSession(authOptions);
@@ -25,7 +28,7 @@ export default async function Header() {
             <>
               <Link
                 href={"/account"}
-                className="flex text-white border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
+                className="flex text-white text-center border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
               >
                 My Account
               </Link>
@@ -33,20 +36,12 @@ export default async function Header() {
             </>
           )}
           {!session && (
-            <>
-              <Link
-                href={"/login"}
-                className="flex text-white border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
-              >
-                Sign In
-              </Link>
-              <Link
-                href={"/login"}
-                className="flex bg-secondary-color border-2 border-secondary-color text-black items-center gap-2 rounded-lg p-2 px-4 shadow"
-              >
-                Create Account
-              </Link>
-            </>
+            <Link
+              href={"/login"}
+              className="flex bg-secondary-color border-2 border-secondary-color text-black items-center gap-2 rounded-lg p-2 px-4 shadow"
+            >
+              Sign In with Google
+            </Link>
           )}
         </nav>
       </div>

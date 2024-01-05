@@ -62,8 +62,6 @@ export default async function AnalyticsPage() {
     views: o.count,
   }));
 
-  console.log(`here is your ${data}`);
-
   return (
     <div>
       <SectionBox>

@@ -59,9 +59,7 @@ function upperFirst(str) {
   return str.slice(0, 1).toUpperCase() + str.slice(1);
 }
 
-export default function PageButtonsForm({ user, page }) {
-  console.log("Page from pagebuttonsform: ", page);
-
+export default function PageButtonsForm({ page }) {
   const pageSavedButtonsKeys = Object.keys(page.buttons);
 
   const pageSavedButtonsInfo = pageSavedButtonsKeys.map((k) =>
