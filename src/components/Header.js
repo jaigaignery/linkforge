@@ -30,7 +30,7 @@ export default async function Header() {
                 href={"/account"}
                 className="flex text-white text-center border-2 border-secondary-color items-center rounded-lg p-2 px-4 shadow"
               >
-                My Account
+                Admin
               </Link>
               <LogoutButton />
             </>

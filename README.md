@@ -52,5 +52,4 @@ I am always looking to add features to and polish LinkForge. Here are some impro
 
 - Upgrade maximum allowed image size to be uploaded (currently 4mb)
 - Ability to change link box and font colour
-- Optimize fontawesome icon loading
 - Add more sign-in providers

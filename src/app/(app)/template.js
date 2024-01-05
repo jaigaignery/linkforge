@@ -11,6 +11,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Toaster } from "react-hot-toast";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 

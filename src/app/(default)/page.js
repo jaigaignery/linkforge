@@ -7,7 +7,7 @@ export default async function Home() {
   const session = await getServerSession(authOptions);
   return (
     <main
-      className="flex flex-col sm:flex-row items-center justify-between gap-8 pt-20
+      className="flex flex-col sm:flex-row items-center justify-between gap-8 pt-8 sm:pt-20
     "
     >
       <div className="max-w-2xl">
