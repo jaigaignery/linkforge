@@ -50,6 +50,7 @@ Leverage analytics to understand your audience better, enabling you to optimize 
 
 I am always looking to add features to and polish LinkForge. Here are some improvements I plan to make in the near future:
 
-- Upgrade maximum allowed image size to be uploaded
+- Upgrade maximum allowed image size to be uploaded (currently 4mb)
+- Ability to change link box and font colour
 - Optimize fontawesome icon loading
 - Add more sign-in providers
